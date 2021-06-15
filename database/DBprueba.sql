@@ -1,8 +1,8 @@
--- MySQL dump 10.19  Distrib 10.3.29-MariaDB, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.18  Distrib 10.3.27-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: eleccionesDB
 -- ------------------------------------------------------
--- Server version	10.3.29-MariaDB-0ubuntu0.20.04.1
+-- Server version	10.3.27-MariaDB-0+deb10u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -15,9 +15,14 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+DROP DATABASE IF EXISTS eleccionesDB;
+CREATE DATABASE eleccionesDB CHARACTER SET utf8mb4;
+USE eleccionesDB;
+
 --
 -- Table structure for table `cargos`
 --
+
 
 DROP TABLE IF EXISTS `cargos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
